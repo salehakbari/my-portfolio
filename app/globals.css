@@ -1,0 +1,64 @@
+/* Fonts loaded via next/font — display swap configured in layout.tsx */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #f6f5f2;
+  --ink: #141617;
+  --background: #f6f5f2;
+  --header-h: 4rem;
+}
+
+.dark {
+  --background: oklch(0 0 0);
+}
+
+html, body {
+  background-color: var(--canvas);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+}
+
+section[id] {
+  scroll-margin-top: var(--header-h);
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  section[id] {
+    padding-bottom: 5rem;
+  }
+}
+
+[id$="-heading"] {
+  scroll-margin-top: calc(var(--header-h) + 0.5rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-feature-settings: "ss01", "ss02", "cv11";
+}
+
+::selection {
+  background-color: var(--ink);
+  color: var(--canvas);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
