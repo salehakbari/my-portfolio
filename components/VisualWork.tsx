@@ -20,7 +20,7 @@ const VISUAL_PROJECTS: VisualProject[] = [
     summary:
       "For Christmas 2026, the goal was not just to post another holiday greeting. The video had to carry the warmth of the season while also strengthening trust in the Parsis Immigration brand. That led to a simple idea that felt both playful and strategic: let Santa deliver the message. The final piece was produced in English, French, and Persian so it could feel personal and familiar across different parts of the audience, while still keeping the brand front and center.",
     tools: ["Nanobanana Pro", "Kling", "Dzine Lip Sync", "ElevenLabs", "CapCut", "ChatGPT"],
-    thumbnail: "/Visual%20Work/Merry%20Christmas%202026.png",
+    thumbnail: "/Visual%20Work/Merry%20Christmas%202026.jpg",
     vimeoId: "1185020543",
     aspectRatio: "9:16",
   },
@@ -50,7 +50,7 @@ const VISUAL_PROJECTS: VisualProject[] = [
     summary:
       "A surprising number of applicants lose their opportunity after receiving an invitation because documents are incomplete or the submission process takes too long. This video was made to explain that risk quickly and clearly, without overwhelming the viewer. I used an AI presenter designed for Francophone content and focused on delivering the problem and the solution in a short format that could work well in a campaign environment.",
     tools: ["CapCut", "Nanobanana Pro", "Kling", "Claude"],
-    thumbnail: "/Visual%20Work/What%20you%20should%20know%20after%20getting%20ITA.png",
+    thumbnail: "/Visual%20Work/What%20you%20should%20know%20after%20getting%20ITA.jpg",
     vimeoId: "1185030531",
     aspectRatio: "16:9",
   },
