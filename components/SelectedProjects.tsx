@@ -113,7 +113,7 @@ function Caption({ project }: { project: ProjectSlot }) {
       <h3 className="font-display font-medium text-ink leading-[1.05] tracking-tight text-[clamp(1.5rem,3vw,2.25rem)]">
         {project.title}
       </h3>
-      <p className="mt-3 text-[13px] text-graphite leading-[1.6] max-w-[52ch] line-clamp-2">
+      <p className="mt-3 text-[13px] text-graphite leading-[1.6] max-w-[52ch]">
         {project.context}
       </p>
       <div className="mt-3 text-sm text-ink font-medium leading-[1.4]">

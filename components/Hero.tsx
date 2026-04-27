@@ -14,8 +14,7 @@ import { FallingPattern } from "@/components/ui/falling-pattern";
 const EYEBROW = "Content · Growth · Systems";
 const IDENTITY_NOTE =
   "From strategy to execution — I build the content, run the campaigns, and automate the workflows that make marketing teams do more with less.";
-const WORK_STYLE =
-  "From producing the first video to building the automation that ships a hundred — I work across the full stack of growth, and connect the parts that usually stay separate.";
+const WORK_STYLE = "";
 
 export default function Hero() {
   return (
