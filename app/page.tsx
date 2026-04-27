@@ -23,20 +23,21 @@ export default function HomePage() {
           <div className="h-px w-full bg-line" />
           <div className="mt-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-[11px] uppercase tracking-[0.3em] text-mute">
             <span className="text-ink/80">06 - Contact</span>
-            <span>Available for select engagements - 2026</span>
+            <span>Open to full-time opportunities - 2026</span>
           </div>
 
           <div className="mt-16 md:mt-24 grid grid-cols-12 gap-6 md:gap-10 items-end">
             <div className="col-span-12 md:col-span-8">
               <h2 className="font-display font-medium text-ink leading-[0.9] tracking-tightest text-[clamp(2.75rem,6.5vw,5.5rem)]">
-                Make the work.
+                Let&rsquo;s build something
                 <br />
-                <span className="text-graphite">Improve how it ships.</span>
+                <span className="text-graphite">that actually works.</span>
               </h2>
               <p className="mt-6 text-[15px] text-graphite leading-[1.6] max-w-[52ch]">
-                Creative production, growth thinking, and workflow design -
-                useful for teams that need stronger execution now, and smarter
-                systems over time.
+                I&rsquo;m looking for a team that cares about doing marketing
+                right. Strong content, campaigns that perform, and systems that
+                make it all easier to scale. If that sounds like your team,
+                I&rsquo;d love to talk.
               </p>
             </div>
             <div className="col-span-12 md:col-span-4 md:text-right">

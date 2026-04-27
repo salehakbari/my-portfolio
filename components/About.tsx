@@ -5,6 +5,7 @@ const META: { label: string; value: string }[] = [
   { label: "Experience", value: "14+ years across content and digital" },
   { label: "Focus", value: "Content + Growth + Systems" },
   { label: "Execution", value: "Multilingual - EN - FA" },
+  { label: "Availability", value: "Open to full-time roles" },
 ];
 
 export default function About() {
@@ -40,8 +41,7 @@ export default function About() {
               Short note
             </div>
             <p className="mt-5 font-display font-medium text-ink leading-[1.15] tracking-tight text-[clamp(1.5rem,2.6vw,2.1rem)]">
-              A hybrid operator across creative production, marketing execution, and
-              smarter systems.
+              A digital marketer who builds the systems that make the work last.
             </p>
             <p className="mt-6 text-[15px] text-graphite leading-[1.6] max-w-[58ch]">
               My career started in making things — audio, video, photography,
@@ -51,10 +51,11 @@ export default function About() {
               underneath the work.
             </p>
             <p className="mt-4 text-[15px] text-graphite leading-[1.6] max-w-[58ch]">
-              That range is deliberate. I don&rsquo;t think about visibility,
-              conversion, and operations as separate jobs. I think about them as a
-              sequence — and the rarest skill is being able to move across all
-              three in the same role.
+              That range is deliberate. I don&rsquo;t think about content,
+              performance, and automation as separate jobs. I think about them as
+              a sequence, and I&rsquo;m at my best when I can move across all
+              three. Right now I&rsquo;m looking for a team where that kind of
+              ownership actually matters.
             </p>
 
             <dl className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-6 border-t border-line pt-8">

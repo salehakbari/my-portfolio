@@ -42,31 +42,8 @@ const CAPABILITIES: Capability[] = [
   },
   {
     index: "02",
-    title: "Marketing operations and automation",
-    discipline: "MarOps - n8n - AI",
-    body:
-      "Workflows that reduce manual work, improve follow-up, and make execution more consistent.",
-    scope: [
-      "Lead routing and CRM logic",
-      "n8n and webhook automations",
-      "AI-assisted internal systems",
-      "RAG-enabled response support",
-    ],
-    proof: [
-      "916 hours of manual work eliminated in 8 months",
-      "Lead routing automated across 3 intake channels",
-      "Response time cut from hours to minutes via n8n workflows",
-    ],
-    metrics: [
-      "916 hours saved in 8 months",
-      "3 language pipelines automated",
-    ],
-    tools: ["n8n", "Webhooks", "Notion CRM", "Docker", "API integrations"],
-  },
-  {
-    index: "03",
     title: "Content systems and creative execution",
-    discipline: "Content - Video - Photo",
+    discipline: "Content - Video - AI Production",
     body:
       "Content is not just strategy on paper - it has to be produced well, adapted fast, and fit the platform.",
     scope: [
@@ -86,6 +63,29 @@ const CAPABILITIES: Capability[] = [
       "1,500+ multimedia assets produced",
     ],
     tools: ["Premiere Pro", "CapCut", "Midjourney", "ElevenLabs", "Sora", "Kling"],
+  },
+  {
+    index: "03",
+    title: "Marketing operations and automation",
+    discipline: "MarOps - Automation - AI Systems",
+    body:
+      "Workflows that reduce manual work, improve follow-up, and make execution more consistent.",
+    scope: [
+      "Lead routing and CRM logic",
+      "n8n and webhook automations",
+      "AI-assisted internal systems",
+      "RAG-enabled response support",
+    ],
+    proof: [
+      "916 hours of manual work eliminated in 8 months",
+      "Lead routing automated across 3 intake channels",
+      "Response time cut from hours to minutes via n8n workflows",
+    ],
+    metrics: [
+      "916 hours saved in 8 months",
+      "3 language pipelines automated",
+    ],
+    tools: ["n8n", "Webhooks", "Notion CRM", "Docker", "API integrations"],
   },
 ];
 

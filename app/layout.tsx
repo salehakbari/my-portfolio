@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const SITE_URL = "https://salehakbari.com";
-const SITE_TITLE = "Saleh Akbari — MarOps & AI Automation Specialist | Montreal";
+const SITE_TITLE = "Saleh Akbari — Digital Marketing Specialist | Content, SEO & AI-Powered Systems | Montreal";
 const SITE_DESCRIPTION =
   "Hybrid digital operator specializing in AI automation, content systems, and performance marketing. Based in Montreal.";
 const SOCIAL_IMAGE = "/Saleh1.jpg";

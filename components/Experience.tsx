@@ -23,36 +23,36 @@ const ROLES: Role[] = [
     company: "Parsis International Inc.",
     role: "Social Media and MarOps Specialist",
     summary:
-      "Engineered a full-scale AI content factory for multilingual publishing, built lead automation pipelines, and managed Google Ads campaigns — reducing manual workload by 916 hours while achieving ~20% funnel conversion rates.",
+      "What started as a social media role turned into building the full marketing operation. I designed an AI content factory for multilingual publishing, set up lead automation pipelines, and ran Google Ads campaigns targeting Francophone African markets.",
     highlight:
-      "916 hours saved through automation · ~20% conversion rate · $0.19 avg CPC",
+      "916 hours saved through automation · ~20% funnel conversion rate · $0.19 avg CPC · 5,000+ leads generated",
   },
   {
     years: "2020 - 2023",
     company: "Amin Daneshjoo Pasargad",
     role: "Social Media and Website Content Manager",
     summary:
-      "Led end-to-end content production and social media strategy, resulting in 300% growth in Instagram engagement over 12 months through consistent publishing, influencer campaigns, and performance-aligned creative.",
+      "I handled everything from photography and video editing to publishing schedules and influencer outreach. The goal was building a content engine that felt consistent and on-brand, and over 12 months Instagram engagement grew by 300%.",
     highlight:
-      "300% Instagram engagement growth · Full-cycle content production · Influencer campaigns",
+      "300% Instagram engagement growth · Full-cycle content production · Photography, video, and influencer campaigns",
   },
   {
     years: "2016 - 2020",
     company: "Yadak118.com",
     role: "COO and SEO Manager",
     summary:
-      "Scaled organic traffic from 50 to 12,000+ daily visitors through SEO strategy, content systems, and e-commerce operations — while managing a 3,000+ product image library and a custom ASP.NET platform.",
+      "I came in to run SEO and ended up taking on operations as well. Over four years I built the content and keyword strategy that took the site from 50 daily visitors to over 12,000, while also managing the e-commerce platform and product library.",
     highlight:
-      "50 → 12,000 daily visitors · 1,400+ Page 1 keywords · 3,000+ product images",
+      "50 → 12,000 daily visitors · 1,400+ Page 1 keywords · 7,000+ keywords at position 1",
   },
   {
     years: "2011 - 2015",
     company: "Hozeh Honari (Ehonari.ir)",
     role: "Multimedia Content Producer",
     summary:
-      "Produced and archived 1,500+ multimedia assets across audio and video formats, improved audience engagement by 30%, and built the creative foundation that shaped the next decade of digital work.",
+      "This is where I learned to make things. I produced and archived over 1,500 audio and video assets, and the discipline I built here shaped how I approach creative work to this day.",
     highlight:
-      "1,500+ assets produced · 30% engagement lift · Foundation for all future digital roles",
+      "1,500+ assets produced · 30% engagement lift · Foundation for all future digital and marketing work",
   },
 ];
 

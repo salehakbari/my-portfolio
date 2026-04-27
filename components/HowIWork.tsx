@@ -27,7 +27,7 @@ const STAGES: Stage[] = [
       { value: "50→12k", label: "Daily visitors built" },
     ],
     body:
-      "In a startup, visibility is survival. I build the content strategy, run the SEO, produce the videos, and manage paid campaigns — not as separate workstreams, but as one coordinated push to put the product in front of people who need it.",
+      "I build the content strategy, run the SEO, produce the videos, and manage paid campaigns. Not as separate workstreams, but as one coordinated push to put the product in front of people who need it.",
   },
   {
     index: "02",
@@ -41,7 +41,7 @@ const STAGES: Stage[] = [
       { value: "3×", label: "Lead tracking reliability" },
     ],
     body:
-      "Getting traffic is only half the job. I optimize for what happens after the click — landing pages, form logic, CRM routing, and follow-up sequences — so the attention you paid for actually converts.",
+      "Getting traffic is only half the job. I optimize for what happens after the click: landing pages, form logic, CRM routing, and follow-up sequences so the attention you paid for actually converts.",
   },
   {
     index: "03",
@@ -55,7 +55,7 @@ const STAGES: Stage[] = [
       { value: "RAG", label: "AI sales assistant deployed" },
     ],
     body:
-      "The best marketing systems are the ones that keep working without constant intervention. I build automation workflows, AI-assisted pipelines, and CRM logic that let small teams execute at scale.",
+      "The best marketing systems keep working without constant intervention. I build automation workflows, AI-assisted pipelines, and CRM logic that let small teams execute at scale.",
   },
 ];
 
