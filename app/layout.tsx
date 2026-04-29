@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -65,16 +66,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-canvas text-ink">{children}</body>
+      <body className="font-sans antialiased bg-canvas text-ink">
+        {children}
+        <GoogleAnalytics gaId="G-3H6CJW0X0Q" />
+      </body>
     </html>
   );
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H6CJW0X0Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3H6CJW0X0Q');
-</script>
-  }
+}
