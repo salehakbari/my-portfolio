@@ -68,4 +68,9 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-canvas text-ink">{children}</body>
     </html>
   );
-}
+
+ <body>
+    {children}
+    <GoogleAnalytics gaId="G-3H6CJW0X0Q" />
+  </body>
+  }
