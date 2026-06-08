@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 
@@ -26,6 +27,16 @@ const VISUAL_PROJECTS: VisualProject[] = [
   },
   {
     index: "02",
+    title: "Go Habs Go — A Fan Anthem for the Montreal Canadiens",
+    summary:
+      "A 1:11 fan music video produced for the Montreal Canadiens supporter community, moving from the team's 1909 origins through its legends and into the current roster. The goal was to push the latest capabilities of each tool in the pipeline as far as they would go. Claude handled script, song structure, and a ten-scene shot breakdown. Suno produced the original track. GPT Image 2 was run through Codex, where the full scenario, style guide, and prompt set were defined as a structured project so every keyframe stayed inside a single visual system. Seedance 2.0 animated the ten scenes using three different generation strategies depending on what each shot needed. Final assembly in CapCut. The core challenge was consistency: ten scenes spanning a century of players, different lighting conditions, and different camera angles, all needing to read as one piece.",
+    tools: ["Claude", "Codex", "GPT Image2", "Suno", "Seedance 2.0", "CapCut"],
+    thumbnail: "/Visual%20Work/Ice-Remember.jpg",
+    vimeoId: "1199563143",
+    aspectRatio: "16:9",
+  },
+  {
+    index: "03",
     title: "Francophone Express Entry for African Audiences",
     summary:
       "This video was created for an Instagram campaign focused on the Francophone Express Entry pathway for French speaking audiences in Africa. A strong first hook mattered, so I did not want the opening to sound overly formal or too safe. Instead, I used an AI presenter with a polished but approachable look and shaped the script to sit somewhere between brand credibility and natural conversation. The result was a piece designed to stop the scroll without losing the tone Parsis needed to maintain.",
@@ -35,7 +46,7 @@ const VISUAL_PROJECTS: VisualProject[] = [
     aspectRatio: "9:16",
   },
   {
-    index: "03",
+    index: "04",
     title: "Tara Covers the Express Entry Changes",
     summary:
       "When new changes were announced in Canada's Express Entry system, the video needed to feel informative, timely, and visually grounded. I built it by combining an AI presenter, interview style news visuals, and real footage from Canada so the update would feel closer to an actual media piece rather than a plain explainer. This project also introduced Tara, a custom designed AI presenter created to feel more aligned with the Parsis brand across both English and Persian content.",
@@ -45,7 +56,7 @@ const VISUAL_PROJECTS: VisualProject[] = [
     aspectRatio: "9:16",
   },
   {
-    index: "04",
+    index: "05",
     title: "What Happens After You Get an ITA",
     summary:
       "A surprising number of applicants lose their opportunity after receiving an invitation because documents are incomplete or the submission process takes too long. This video was made to explain that risk quickly and clearly, without overwhelming the viewer. I used an AI presenter designed for Francophone content and focused on delivering the problem and the solution in a short format that could work well in a campaign environment.",
@@ -55,7 +66,7 @@ const VISUAL_PROJECTS: VisualProject[] = [
     aspectRatio: "16:9",
   },
   {
-    index: "05",
+    index: "06",
     title: "Tara on the CN Tower",
     summary:
       "For this immigration update, I wanted the opening to do more than introduce the topic. It needed a visual hook strong enough to make people stop before the message even began. So instead of starting with a standard presenter shot, I placed Tara on the edge of Toronto's CN Tower, speaking to the camera while it slowly pulls away. The scene was designed to create tension and curiosity first, then carry the viewer into the actual update.",
@@ -272,12 +283,12 @@ function VideoPanel({
       className="group absolute inset-0 w-full h-full overflow-hidden"
       aria-label={`Play ${project.title}`}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={project.thumbnail}
         alt={project.title}
+        fill
+        sizes="(min-width: 768px) 50vw, 90vw"
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,0.61,0.36,1)] group-hover:scale-[1.03]"
-        loading="lazy"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-black/20 transition-opacity duration-500 group-hover:from-black/50" />
       <div className="absolute inset-0 flex items-center justify-center">

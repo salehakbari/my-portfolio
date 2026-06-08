@@ -168,13 +168,10 @@ function DotNav() {
                   }}
                   aria-label={item.label}
                   aria-current={isActive ? "true" : undefined}
-                  className="group flex items-center justify-end gap-2"
+                  className="group flex h-5 w-5 items-center justify-center"
                 >
                   <span
-                    className={[
-                      "text-[9px] uppercase tracking-[0.2em] transition-all duration-300 group-hover:text-ink/50",
-                      isActive ? "text-ink/60" : "text-ink/0",
-                    ].join(" ")}
+                    className="sr-only"
                   >
                     {item.label}
                   </span>

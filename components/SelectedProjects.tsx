@@ -47,69 +47,55 @@ function ProjectCard({ project }: { project: ProjectSlot }) {
 }
 
 function MediaFrame({ project }: { project: ProjectSlot }) {
-  const aspect = project.format === "wide" ? "aspect-[16/10]" : "aspect-[4/5]";
+  const aspect =
+    project.format === "wide" ? "aspect-[17/10]" : "aspect-[4/5]";
 
   return (
-    <div
-      className={[
-        "relative overflow-hidden rounded-[2px] border border-line bg-surface",
-        aspect,
-      ].join(" ")}
-    >
+    <figure>
       <div
-        aria-hidden
-        className={`absolute inset-0 transition-opacity duration-500 ${project.mediaSrc ? "opacity-30" : "opacity-100"}`}
-        style={{
-          backgroundImage:
-            "linear-gradient(135deg, #EAEAEA 0%, #DCDCDC 100%), repeating-linear-gradient(45deg, rgba(20,22,23,0.04) 0 1px, transparent 1px 12px)",
-          backgroundBlendMode: "multiply",
-        }}
-      />
+        className={[
+          "relative overflow-hidden rounded-[2px] border border-line bg-surface",
+          aspect,
+        ].join(" ")}
+      >
+        <div
+          aria-hidden
+          className={`absolute inset-0 transition-opacity duration-500 ${project.mediaSrc ? "opacity-35" : "opacity-100"}`}
+          style={{
+            backgroundImage:
+              "linear-gradient(135deg, #EAEAEA 0%, #DCDCDC 100%), repeating-linear-gradient(45deg, rgba(20,22,23,0.04) 0 1px, transparent 1px 12px)",
+            backgroundBlendMode: "multiply",
+          }}
+        />
 
-      {project.mediaSrc && (
-        <div className="absolute inset-0 p-4 md:p-6">
-          <div className="relative h-full w-full">
+        {project.mediaSrc && (
+          <div className="absolute inset-1 md:inset-2">
             <Image
               src={project.mediaSrc}
               alt={project.title}
               fill
               sizes="(min-width: 768px) 50vw, 90vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
-        </div>
-      )}
-
-      <div
-        aria-hidden
-        className="absolute inset-2.5 rounded-[1px] border border-ink/[0.06] pointer-events-none"
-      />
-
-      <div className="absolute top-5 right-6 text-[10px] uppercase tracking-[0.3em] tabular-nums text-mute">
-        {project.year}
+        )}
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 flex items-center gap-3 px-5 md:px-6 py-4 text-[10px] uppercase tracking-[0.3em] text-mute border-t border-line bg-canvas/60 backdrop-blur-[2px]">
+      <figcaption className="mt-2 flex items-center gap-2 overflow-hidden border-b border-line pb-3 text-[9px] uppercase tracking-[0.22em] text-mute md:mt-3 md:gap-3 md:text-[10px] md:tracking-[0.3em]">
         <span>{project.discipline}</span>
         <span aria-hidden className="opacity-40">
           /
         </span>
         <span className="tabular-nums">{project.year}</span>
-        <span aria-hidden className="opacity-40">
-          /
-        </span>
-        <span className="truncate">{project.role}</span>
-      </div>
-    </div>
+      </figcaption>
+    </figure>
   );
 }
 
 function Caption({ project }: { project: ProjectSlot }) {
   return (
     <div className="mt-6 md:mt-8">
-      <div className="mb-2 text-[11px] uppercase tracking-[0.2em] text-mute">
-        {project.stats}
-      </div>
+      <StatsLine stats={project.stats} />
       <h3 className="font-display font-medium text-ink leading-[1.05] tracking-tight text-[clamp(1.5rem,3vw,2.25rem)]">
         {project.title}
       </h3>
@@ -119,6 +105,23 @@ function Caption({ project }: { project: ProjectSlot }) {
       <div className="mt-3 text-sm text-ink font-medium leading-[1.4]">
         {project.outcome}
       </div>
+    </div>
+  );
+}
+
+function StatsLine({ stats }: { stats: string }) {
+  const parts = stats.split(/\s*\u00C2?\u00B7\s*/).filter(Boolean);
+
+  return (
+    <div className="mb-3 flex flex-col gap-1 text-[10px] uppercase tracking-[0.16em] text-mute md:mb-2 md:flex-row md:flex-wrap md:gap-0 md:text-[11px] md:tracking-[0.2em]">
+      {parts.map((part) => (
+        <span
+          key={part}
+          className="leading-[1.5] md:after:mx-2 md:after:text-mute/50 md:after:content-['/'] last:md:after:content-none"
+        >
+          {part}
+        </span>
+      ))}
     </div>
   );
 }

@@ -14,7 +14,6 @@ import { FallingPattern } from "@/components/ui/falling-pattern";
 const EYEBROW = "Content · Growth · Systems";
 const IDENTITY_NOTE =
   "From strategy to execution — I build the content, run the campaigns, and automate the workflows that make marketing teams do more with less.";
-const WORK_STYLE = "";
 
 export default function Hero() {
   return (
@@ -92,9 +91,6 @@ function DesktopHero() {
             </motion.h1>
             <p className="mt-7 text-[clamp(1rem,1.65vw,1.28rem)] text-graphite leading-[1.5] max-w-[34ch]">
               {IDENTITY_NOTE}
-            </p>
-            <p className="mt-4 text-[15px] text-graphite leading-[1.65] max-w-[54ch]">
-              {WORK_STYLE}
             </p>
             <div className="mt-8 flex items-center gap-4">
               <a
@@ -218,9 +214,6 @@ function MobileHero() {
             </h1>
             <p className="mt-7 text-[1.02rem] text-graphite leading-[1.55] max-w-[34ch]">
               {IDENTITY_NOTE}
-            </p>
-            <p className="mt-4 text-[15px] text-graphite leading-[1.65] max-w-[54ch]">
-              {WORK_STYLE}
             </p>
             <div className="mt-8 flex items-center gap-4">
               <a

@@ -320,14 +320,17 @@ function MobileStages({
               ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-3 mb-6">
-              {activeStage.metrics.map((metric) => (
+            <div className="grid grid-cols-2 gap-3 mb-6">
+              {activeStage.metrics.map((metric, i) => (
                 <div
                   key={metric.label}
-                  className="border border-line rounded-xl bg-canvas px-4 py-4"
+                  className={[
+                    "min-w-0 border border-line rounded-xl bg-canvas px-4 py-4",
+                    i === activeStage.metrics.length - 1 ? "col-span-2" : "",
+                  ].join(" ")}
                 >
                   <div className="h-[1.5px] w-8 bg-ink/30 mb-3" />
-                  <div className="font-display text-[1.5rem] font-medium text-ink leading-[1] tabular-nums">
+                  <div className="font-display text-[1.45rem] font-medium text-ink leading-[1] tabular-nums whitespace-nowrap">
                     {metric.value}
                   </div>
                   <div className="text-[10px] uppercase tracking-[0.18em] text-mute mt-1.5 leading-[1.3]">
